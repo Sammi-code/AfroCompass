@@ -1,0 +1,85 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: block;
+    overflow-x: hidden;
+}
+
+/* NavBar Styling */
+
+nav {
+    background-color: white;
+}
+
+.navbar-brand img {
+    max-height: 60px;
+    margin: 0 6rem;
+    margin-right: 8rem;
+}
+
+.navbar-nav{
+    margin-left: 10rem;
+}
+
+
+.navbar-brand {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+
+nav ul li a {
+    color: #1a82bd !important;
+    font-size: 18px;
+    margin: auto 10px;
+}
+
+nav ul li a:hover {
+    color: #d23539 !important;
+}
+
+nav ul li a:focus {
+    color: #d23539 !important;
+}
+
+nav ul li a:active {
+    color: #d23539 !important;
+}
+
+.form-inline i{
+    color: #1a82bd;
+    margin: 0.5rem;
+    height:1rem;
+    font-size: 1.2rem;
+}
+
+.form-inline i:hover{
+    color: #d23539 !important;
+}
+
+.wrap{
+    margin: 10px;
+    column-count: 2;
+    column-gap: 30px;
+}
+
+.item img{
+    width: 50%;
+    border-radius: 6px;
+    filter: saturate(150%);
+ }
+
+.wrap .item{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    /* A very important tool for Masonry Grid*/
+    break-inside: avoid;
+}
