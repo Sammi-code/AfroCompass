@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Afrocompass | Contact Us</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
+
+     <!-- AOS Animation-->
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Owl carousel 2 -->
+    <link rel="stylesheet" href="../vendor/owl.carousel2/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../vendor/owl.carousel2/assets/owl.theme.default.min.css">
+    <!-- Modal video-->
+    <link rel="stylesheet" href="../vendor/modal-video/css/modal-video.min.css">
+    <!-- Leaflet-->
+    <link rel="stylesheet" href="../vendor/leaflet/leaflet.css">
+    <!-- Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&amp;font-display=swap">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="../assets/css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="../assets/img/iconfile.png">
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+
+        <!-- NAVBAR-->
+
+        <header class="header fixed-top active">
+      <nav class="navbar navbar-expand-lg navbar-light py-3">
+        <div class="container"><a class="navbar-brand" href="../index.html"><img src="../assets/img/logo.png" alt="..." width="160"></a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <!-- Link--><a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item mr-2">
+                <!-- Link--><a class="nav-link" href="about.html">About us</a>
+              </li>
+              <li class="nav-item mr-2">
+                <!-- Link--><a class="nav-link active" href="#">Our Services</a>
+              </li>
+              <li class="nav-item mr-2">
+                <!-- Link--><a class="nav-link" href="contact.html">Contact us</a>
+              </li>
+              <li class="nav-item">             
+                <button class="btn btn-primary" type="button" data-target="#quoteForm" data-toggle="modal">Got a Project?</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    
+    <!-- Got a Project MODAL -->
+    <div class="modal fade" id="quoteForm" tabindex="-1" role="dialog" aria-labelledby="quoteForm" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content p-md-3">
+          <div class="modal-header">
+            <h4 class="modal-title">Get in <span class="text-primary">touch.</span></h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body">
+            <form action="#">
+              <div class="row">
+                <div class="form-group col-lg-6">
+                  <label class="font-weight-bold text-small" for="firstname">First name<span class="text-primary ml-1">&#42;</span></label>
+                  <input class="form-control" id="firstname" type="text" placeholder="Enter your first name" required>
+                </div>
+                <div class="form-group col-lg-6">
+                  <label class="font-weight-bold text-small" for="lastname">Last name<span class="text-primary ml-1">&#42;</span></label>
+                  <input class="form-control" id="lastname" type="text" placeholder="Enter your last name" required>
+                </div>
+                <div class="form-group col-lg-12">
+                  <label class="font-weight-bold text-small" for="email">Email address<span class="text-primary ml-1">&#42;</span></label>
+                  <input class="form-control" id="email" type="email" placeholder="Enter your email address" required>
+                </div>
+                <div class="form-group col-lg-6">
+                  <label class="font-weight-bold text-small" for="phone">Phone number <small class="small text-gray">optional</small></label>
+                  <input class="form-control" id="phone" type="tel" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group col-lg-6">
+                  <label class="font-weight-bold text-small" for="projecttype">Project type<span class="text-primary ml-1">&#42;</span></label>
+                  <input class="form-control" id="projecttype" type="text" placeholder="Enter your project type" required>
+                </div>
+                <div class="form-group col-lg-6">
+                  <label class="font-weight-bold text-small" for="budget">Estimated budget<span class="text-primary ml-1">&#42;</span></label>
+                  <input class="form-control" id="budget" type="text" placeholder="Enter your estimated budget" required><small class="form-text text-muted">Project budget will be on <span class="text-dark">$</span></small>
+                </div>
+                <div class="form-group col-lg-6">
+                  <label class="font-weight-bold text-small" for="timeframe">Time frame<span class="text-primary ml-1">&#42;</span></label>
+                  <input class="form-control" id="timeframe" type="text" placeholder="Maximum time for the project" required>
+                </div>
+                <div class="form-group col-lg-12">
+                  <label class="font-weight-bold text-small" for="projectdetail">Project details<span class="text-primary ml-1">&#42;</span></label>
+                  <textarea class="form-control" id="projectdetail" rows="5" placeholder="Provide a short brief about your project" required></textarea>
+                </div>
+                <div class="form-group col-lg-12">
+                  <button class="btn btn-primary" type="submit">Submit your request</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+          
+
+  <!-- HERO SECTION-->
+  <section class="hero with-pattern py-5 bg-light">
+    <div class="container py-5 my-5">
+      <div class="row">
+        <div class="col-md-7 mx-auto text-center">
+          <p class="h6 text-uppercase text-primary">Our Services</p>
+          <h1>From Ideation to Implementation</h1>
+          <p class="text-muted">We are ready to seamlessly deliver products and next-generation initiatives.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CONTACT DETAILS SECTION    -->
+  <section class="pulled-up-section">
+    <div class="container text-center">
+      <div class="card shadow with-pattern-full">
+        <di class="card-body py-5 p-md-5 index-forward">
+          
+    
+            <section class="py-5 bg-primary map-bg text-white">
+      <div class="container text-center py-5">
+        <div class="row mb-0">
+          
+        </div>
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-easing="linear"
+            data-aos-duration="1200"
+          >
+            <div class="card border-0 card-hover-bg">
+              <div class="card-body p-lg-5">
+                <svg class="svg-icon svg-icon-big svg-icon-light mb-4">
+                  <use xlink:href="#configuration-1"> </use>
+                </svg>
+                <h4>Hardware Sales & Installation</h4>
+                <p class="text-small mb-0">We sell and install sophisticated hardware equipments needed for the necessary upgrades
+                    needed by clients in the ever growing field of technology.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-easing="linear"
+          data-aos-duration="1400"
+          
+          >
+            <div class="card border-0 card-hover-bg">
+              <div class="card-body p-lg-5">
+                <svg class="svg-icon svg-icon-big svg-icon-light mb-4">
+                  <use xlink:href="#iphone-1"> </use>
+                </svg>
+                <h4>Mobile App Development</h4>
+                <p class="text-small mb-0">Our mobile development team build applications that are easy to use and reliable, 
+                    the team has proficiency in building robust native applications for all major platforms including Android, iOS and Windows Mobile.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-easing="linear"
+            data-aos-duration="1600"
+          
+          >
+            <div class="card border-0 card-hover-bg">
+              <div class="card-body p-lg-5">
+                <svg class="svg-icon svg-icon-big svg-icon-light mb-4">
+                  <use xlink:href="#stack-1"> </use>
+                </svg>
+                <h4>UI/UX Design</h4>
+                <p class="text-small mb-0">Our design team focuses purely on the user, we conceptualize and 
+                    craft digital products from basic sketching to high fidelity prototypes with the best of experience practices infused.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-easing="linear"
+            data-aos-duration="1600"
+          
+          >
+            <div class="card border-0 card-hover-bg">
+              <div class="card-body p-lg-5">
+                <svg class="svg-icon svg-icon-big svg-icon-light mb-4">
+                  <use xlink:href="#checked-window-1"> </use>
+                </svg>
+                <h4>Digital Marketing</h4>
+                <p class="text-small mb-0">We help companies clearly define a product strategy and articulate 
+                    the optimal approach for product development, helping them position better for ease of discovery and better advertisement.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-easing="linear"
+            data-aos-duration="1600"
+          
+          >
+            <div class="card border-0 card-hover-bg">
+              <div class="card-body p-lg-5">
+                <svg class="svg-icon svg-icon-big svg-icon-light mb-4">
+                  <use xlink:href="#imac-screen-1"> </use>
+                </svg>
+                <h4>Web Development</h4>
+                <p class="text-small mb-0">We build and deliver effective web solutions that project the qualities and vision of our clients,
+                    we achieve this by deeply understanding the users and executing based on their strongest needs.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-easing="linear"
+            data-aos-duration="1600"
+          
+          >
+            <div class="card border-0 card-hover-bg">
+              <div class="card-body p-lg-5">
+                <svg class="svg-icon svg-icon-big svg-icon-light mb-4">
+                  <use xlink:href="#quality-1"> </use>
+                </svg>
+                <h4>Systems Development</h4>
+                <p class="text-small mb-0">We offer digital boutique standard solutions tailored distinctly to the needs of client's business, 
+                    solving both unusual and unique anomalies with the aid of technology.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+</section>
+
+
+
+
+
+
+
+
+
+
+      <!-- FOOTER -->
+
+
+      <footer class="map-bg">
+        <div class="container py-5 border-bottom">
+          <div class="row pt-5">
+            <div class="col-lg-3 col-md-4 mb-2 mb-lg-0" id="check"><img class="mb-2 mt--4" src="../assets/img/logo.png" alt="" width="160">
+             
+            </div>
+            <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+              <h4>Explore</h4>
+              <ul class="list-unstyled text-muted mb-0">
+                <li class="mb-1"><a class="text-small reset-anchor" href="#">Home</a></li>
+                <li class="mb-1"><a class="text-small reset-anchor" href="#">About Us</a></li>
+                <li class="mb-1"><a class="text-small reset-anchor" href="#">Our Services</a></li>
+                <li class="mb-1"><a class="text-small reset-anchor" href="#">Contact Us</a></li>
+                <li class="mb-1"><a class="text-small reset-anchor" href="#">Site Map</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+              <h4>Get in Touch</h4>
+              <ul class="list-unstyled text-muted">
+                <li class="mb-1"><i class="fas fa-map-marker-alt"></i>  <a class="reset-anchor text-small">7 Yale Road, Manchester, M18 8BB, UK</a></li>
+                <li class="mb-1"><i class="fas fa-map-marker-alt"></i>  <a class="reset-anchor text-small">999A Danmole Street, VI, Lagos, Nigeria</a></li>
+                <li class="mb-1"><i class="fas fa-envelope"></i>  <a class="reset-anchor text-small" href="mailto:support@afrocompass.com">support@afrocompass.com</a></li>
+                <li class="mb-1"><i class="fas fa-phone-alt"></i>  <a class="reset-anchor text-small" href="tel:+2347064259630">+2347064259630</a></li>
+                <li class="mb-1"><i class="fas fa-phone-alt"></i>  <a class="reset-anchor text-small" href="tel:+447933723513">+447933723513</a></li>
+                <li class="mb-1"><i class="fab fa-whatsapp"></i>  <a class="reset-anchor text-small" href="tel:+2347064259630">+2347064259630</a></li>
+              </ul>
+              <ul class="list-inline text-muted">
+                <li class="list-inline-item"><a class="reset-anchor" href="#"><i class="fab fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a class="reset-anchor" href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li class="list-inline-item"><a class="reset-anchor" href="#"><i class="fab fa-instagram"></i></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <h4>Legal</h4>
+              <ul class="list-unstyled text-muted mb-0">
+                <li class="mb-1"><a class="text-small reset-anchor" href="#">Terms</a></li>
+                <li class="mb-1"><a class="text-small reset-anchor" href="#">Privacy</a></li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container py-4">           
+          <div class="row text-center">
+            <div class="col-lg-6 p-lg-0 text-lg-left">
+              <p class="text-muted text-small mb-0">© 2020 Afrocompass, All Rights Reserved.</p>
+            </div>
+          
+          </div>
+        </div>
+      </footer>
+  
+  
+      <!-- Scroll top button-->
+      <div class="scroll-top-btn" id="scrollTop"><i class="fas fa-long-arrow-alt-up"></i><span class="font-weight-bold text-uppercase small">To the Top</span></div>
+      <!-- JavaScript files-->
+      <script src="../vendor/jquery/jquery.min.js"></script>
+      <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="../vendor/owl.carousel2/owl.carousel.min.js"></script>
+      <script src="../vendor/modal-video/js/modal-video.min.js"></script> 
+      <script src="../vendor/owl.carousel2/owl.carousel.min.js"></script>
+  
+      <script src="../assets/js/front.js"></script>
+      <script>
+        // ------------------------------------------------------- //
+        //   Inject SVG Sprite - 
+        //   see more here 
+        //   https://css-tricks.com/ajaxing-svg-sprite/
+        // ------------------------------------------------------ //
+        function injectSvgSprite(path) {
+        
+            var ajax = new XMLHttpRequest();
+            ajax.open("GET", path, true);
+            ajax.send();
+            ajax.onload = function(e) {
+            var div = document.createElement("div");
+            div.className = 'd-none';
+            div.innerHTML = ajax.responseText;
+            document.body.insertBefore(div, document.body.childNodes[0]);
+            }
+        }
+        // this is set to BootstrapTemple website as you cannot 
+        // inject local SVG sprite (using only 'icons/orion-svg-sprite.svg' path)
+        // while using file:// protocol
+        // pls don't forget to change to your domain :)
+        injectSvgSprite('https://bootstraptemple.com/files/icons/orion-svg-sprite.svg'); 
+        
+      </script>
+  
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  
+      <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+      <script src="https://kit.fontawesome.com/bc9f75cc29.js" crossorigin="anonymous"></script>
+    </body>
+  </html>
