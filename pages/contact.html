@@ -9,6 +9,9 @@
     <meta name="robots" content="all,follow">
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
+
+     <!-- AOS Animation-->
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Owl carousel 2 -->
     <link rel="stylesheet" href="../vendor/owl.carousel2/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="../vendor/owl.carousel2/assets/owl.theme.default.min.css">
@@ -31,7 +34,8 @@
   <body>
 
         <!-- NAVBAR-->
-    <header class="header fixed-top header-animated">
+
+        <header class="header fixed-top active">
       <nav class="navbar navbar-expand-lg navbar-light py-3">
         <div class="container"><a class="navbar-brand" href="../index.html"><img src="../assets/img/logo.png" alt="..." width="160"></a>
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -135,7 +139,12 @@
         <div class="card shadow with-pattern-full">
           <div class="card-body py-5 p-md-5 index-forward">
             <div class="row">
-              <div class="col-md-4 mb-4 mb-lg-0">
+              <div class="col-md-4 mb-4 mb-lg-0"
+              data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-easing="linear"
+            data-aos-duration="1100"
+              >
                 <div class="icon-block icon-block-lg mb-4 mx-auto">
                   <svg class="svg-icon text-primary">
                     <use xlink:href="#landline-1"> </use>
@@ -147,7 +156,12 @@
                   <li class="text-muted"><a class="reset-anchor" href="tel:+447933723513">+44 7933 7235 13</a></li>
                 </ul>
               </div>
-              <div class="col-md-4 mb-4 mb-lg-0">
+              <div class="col-md-4 mb-4 mb-lg-0"
+              data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-easing="linear"
+            data-aos-duration="1200"
+              >
                 <div class="icon-block icon-block-lg mb-4 mx-auto">
                   <svg class="svg-icon text-primary">
                     <use xlink:href="#envelope-1"> </use>
@@ -159,7 +173,12 @@
                   <li class="text-muted"><a class="reset-anchor" href="mailto:info@afrocompass.com">info@afrocompass.com</a></li>
                 </ul>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4"
+              data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-easing="linear"
+            data-aos-duration="1300"
+              >
                 <div class="icon-block icon-block-lg mb-4 mx-auto">
                   <svg class="svg-icon text-primary">
                     <use xlink:href="#pin-1"> </use>
@@ -286,10 +305,10 @@
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../vendor/owl.carousel2/owl.carousel.min.js"></script>
-    <script src="../vendor/modal-video/js/modal-video.min.js"></script>
-    <script src="../vendor/leaflet/leaflet.js"></script>
-    <script src="../assets.js/front.js"></script>
-    <script src="../assets/js/leaflet.js"></script>
+    <script src="../vendor/modal-video/js/modal-video.min.js"></script> 
+    <script src="../vendor/owl.carousel2/owl.carousel.min.js"></script>
+
+    <script src="../assets/js/front.js"></script>
     <script>
       // ------------------------------------------------------- //
       //   Inject SVG Sprite - 
@@ -315,7 +334,13 @@
       injectSvgSprite('https://bootstraptemple.com/files/icons/orion-svg-sprite.svg'); 
       
     </script>
+
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
     <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/bc9f75cc29.js" crossorigin="anonymous"></script>
   </body>
 </html>
