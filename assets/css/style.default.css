@@ -102,6 +102,13 @@ strong {
   left: 1rem;
 }
 
+.google-map {
+  background: #E5E3DF;
+  height: 400px;
+  margin: -35px 0 30px 0;
+  width: 100%;
+}
+
 .map {
   height: 500px;
   position: relative;
