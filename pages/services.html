@@ -12,13 +12,10 @@
 
      <!-- AOS Animation-->
      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- Owl carousel 2 -->
-    <link rel="stylesheet" href="../vendor/owl.carousel2/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="../vendor/owl.carousel2/assets/owl.theme.default.min.css">
+
     <!-- Modal video-->
     <link rel="stylesheet" href="../vendor/modal-video/css/modal-video.min.css">
-    <!-- Leaflet-->
-    <link rel="stylesheet" href="../vendor/leaflet/leaflet.css">
+
     <!-- Google fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&amp;font-display=swap">
     <!-- theme stylesheet-->
@@ -30,7 +27,7 @@
     <link rel="shortcut icon" href="../assets/img/iconfile.png">
     <!-- Tweaks for older IEs--><!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif] -->
   </head>
   <body>
 
@@ -317,20 +314,14 @@
   
       <!-- Scroll top button-->
       <div class="scroll-top-btn" id="scrollTop"><i class="fas fa-long-arrow-alt-up"></i><span class="font-weight-bold text-uppercase small">To the Top</span></div>
-      <!-- JavaScript files-->
+      
+  
       <script src="../vendor/jquery/jquery.min.js"></script>
       <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-      <script src="../vendor/owl.carousel2/owl.carousel.min.js"></script>
-      <script src="../vendor/modal-video/js/modal-video.min.js"></script> 
-      <script src="../vendor/owl.carousel2/owl.carousel.min.js"></script>
-  
+
       <script src="../assets/js/front.js"></script>
       <script>
-        // ------------------------------------------------------- //
-        //   Inject SVG Sprite - 
-        //   see more here 
-        //   https://css-tricks.com/ajaxing-svg-sprite/
-        // ------------------------------------------------------ //
+     
         function injectSvgSprite(path) {
         
             var ajax = new XMLHttpRequest();
@@ -343,10 +334,7 @@
             document.body.insertBefore(div, document.body.childNodes[0]);
             }
         }
-        // this is set to BootstrapTemple website as you cannot 
-        // inject local SVG sprite (using only 'icons/orion-svg-sprite.svg' path)
-        // while using file:// protocol
-        // pls don't forget to change to your domain :)
+       
         injectSvgSprite('https://bootstraptemple.com/files/icons/orion-svg-sprite.svg'); 
         
       </script>
@@ -356,7 +344,6 @@
       AOS.init();
     </script>
   
-      <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
       <script src="https://kit.fontawesome.com/bc9f75cc29.js" crossorigin="anonymous"></script>
     </body>
   </html>
